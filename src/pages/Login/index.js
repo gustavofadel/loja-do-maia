@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './styles.scss';
 
+
 function Login () {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,7 +12,6 @@ function Login () {
       <h1>Login</h1>
 
       <form>
-
         <label htmlFor="email">E-mail</label>
         <input 
           name="email"
@@ -22,7 +22,6 @@ function Login () {
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
-
         <label htmlFor="password">Senha</label>
         <input 
           name="password"
@@ -33,7 +32,6 @@ function Login () {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-
         <button className="button" type="submit">Entrar</button>
 
       </form>
