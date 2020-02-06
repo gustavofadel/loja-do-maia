@@ -1,0 +1,24 @@
+@import "../../styles/global";
+
+div {
+  background-color: $primary-color;
+  height: 150px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+  }
+  #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+  }
+}
+

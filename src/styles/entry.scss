@@ -4,7 +4,12 @@
   font-family: $font-family;
 }
 
-h1 {
+img {
+  width: 150px;
+  height: 150px;
+}
+
+h1, img {
   margin: 60px auto 0;
   margin-bottom: 60px;
 }
@@ -12,9 +17,13 @@ h1 {
 #link {
   margin: 30px auto 0;
 }
+
 h1, #link {
   max-width: 450px;
   width: 100%;
+}
+
+h1, #link, img {
   display: flex;
   flex-direction: column;
   align-items: center;

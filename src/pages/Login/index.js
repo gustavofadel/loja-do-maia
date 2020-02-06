@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import logo from '../../assets/images/logo.png';
 import '../../styles/entry.scss';
 
 
@@ -10,7 +11,7 @@ function Login () {
 
   return (
     <>
-      <h1>Login</h1>
+      <img src={logo} alt="Loja do Maia" title="Loja do Maia" />
       <form>
         <label htmlFor="email">E-mail</label>
         <input 
@@ -32,7 +33,12 @@ function Login () {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-        <button className="button" type="submit">Entrar</button>
+        <button 
+          className="button" 
+          type="submit"
+        >
+          Entrar
+        </button>
       </form>
       <Link to="/register" id="link">Não tem uma conta? Clique aqui</Link>
     </>
