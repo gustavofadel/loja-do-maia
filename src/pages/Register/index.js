@@ -3,15 +3,25 @@ import { Link } from 'react-router-dom';
 
 import '../../styles/entry.scss';
 
-
-function Login () {
+function Register () {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   return (
     <>
-      <h1>Login</h1>
+      <h1>Cadastro</h1>
       <form>
+        <label htmlFor="name">Nome</label>
+        <input 
+          name="name"
+          id="name"
+          type="text"
+          placeholder="O seu nome"
+          required
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
         <label htmlFor="email">E-mail</label>
         <input 
           name="email"
@@ -27,16 +37,16 @@ function Login () {
           name="password"
           id="password"
           type="password"
-          placeholder="Sua senha"
+          placeholder="Uma senha segura"
           required
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-        <button className="button" type="submit">Entrar</button>
+        <button className="button" type="submit">Cadastrar-se</button>
       </form>
-      <Link to="/register" id="link">Não tem uma conta? Clique aqui</Link>
+      <Link to="/" id="link">Já tem uma conta? Faça o login</Link>
     </>
   );
 }
 
-export default Login;
+export default Register;

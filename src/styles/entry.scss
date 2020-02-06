@@ -1,4 +1,4 @@
-@import "../../global";
+@import "./global";
 
 *, input {
   font-family: $font-family;
@@ -7,6 +7,12 @@
 h1 {
   margin: 60px auto 0;
   margin-bottom: 60px;
+}
+
+#link {
+  margin: 30px auto 0;
+}
+h1, #link {
   max-width: 450px;
   width: 100%;
   display: flex;

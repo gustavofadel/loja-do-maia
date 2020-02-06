@@ -3,12 +3,14 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import Route from './Route';
 
 import Login from '../pages/Login';
+import Register from '../pages/Register';
 
 function Routes () {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Login} />
+        <Route path="/register" component={Register} />
       </Switch>
     </BrowserRouter>
   );
